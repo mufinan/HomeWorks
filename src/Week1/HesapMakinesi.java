@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class HesapMakinesi {
     public static void main(String[] args) {
         int n1, n2; //Kullanıcıdan alacağımız değişkenleri tanımladık.
-
         Scanner input = new Scanner(System.in);
+
         //Kullanıcıdan değerleri alıyoruz.
         System.out.print("İlk sayıyı giriniz: ");
         n1 = input.nextInt();
@@ -17,11 +17,10 @@ public class HesapMakinesi {
         System.out.println("1-Toplama\n2-Çıkarma\n3-Çarpma\n4-Bölme"); //Kullanıcıya yapmak istediği işlemi sorduk.
         System.out.print("Seçiminiz: ");
         int select = input.nextInt();
-        // Yapılan seçime göre işlemleri hasplatıyoruz.
+        // Yapılan seçime göre işlemleri hesaplatıyoruz.
         switch (select) {
             case 1:
                 System.out.println(n1 + n2);
-
                 break;
             case 2:
                 System.out.println(n1 - n2);
