@@ -18,7 +18,7 @@ public class KullaniciGirisi {
         } else {
             System.out.println("Girilen bilgiler yanlış! Şifrenizi sıfırlamak ister misiniz? (Evet/Hayır)");
             String resetChoice = inp.nextLine();
-            if (!resetChoice.equals("Evet")) {
+            if (resetChoice.equals("Evet")) {
                 System.out.println("Yeni şifrenizi giriniz:");
                 String newPassword = inp.nextLine();
 

@@ -22,9 +22,9 @@ public class ArmstrongSayiBul {
         while (temp != 0){
             basamakdegeri = temp % 10;
             basamakToplam = 1;
-             for(int i=1; i<=basamakSayisi; i++){
-                 basamakToplam *= basamakdegeri;
-             }
+            for(int i=1; i<=basamakSayisi; i++){
+                basamakToplam *= basamakdegeri;
+            }
             toplam += basamakToplam;
             temp /=10;
         }
