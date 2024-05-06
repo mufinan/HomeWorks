@@ -6,18 +6,20 @@ public class Course {
     String code;
     String prefix;
     int note;
+    double verbalImpact;
+    double verbalNote;
 
-
-    Course(String name,String code,String prefix){
+    Course(String name,String code,String prefix,double verbalImpact){
         this.name = name;
         this.code = code;
         this.prefix = prefix;
+        this.verbalImpact = verbalImpact;
         int note = 0;
     }
 
-    void addTeacher(Teacher teacher){
-        if (teacher.branch.equals(this.prefix)){
-            this.teacher =teacher;
+    void addTeacher(Teacher teacher) {
+        if (teacher.branch.equals(this.prefix)) {
+            this.teacher = teacher;
             //printTeacherInfo();
         } else {
             System.out.println("Öğretmen ve Ders bilgileri uyuşmuyor!");
@@ -28,5 +30,4 @@ public class Course {
     void printTeacherInfo(){
         this.teacher.print();
     }
-
 }

@@ -16,6 +16,4 @@ public class Teacher {
         System.out.println("Bölümü :" + this.branch);
         System.out.println("Telefon numarası :" + this.mpno);
     }
-
-
 }
